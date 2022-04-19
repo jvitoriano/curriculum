@@ -128,24 +128,6 @@ body {
     font-weight: 300;
 }
 
-.contactInfo.language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-
-.contactInfo.language .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-}
-
-
 .container .right_Side {
     position: relative;
     background: #fff;
@@ -255,6 +237,16 @@ p {
     }
 }
 
+.contactInfo.language ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contactInfo.language {
+    color: #fff;
+    font-weight: 500;
+}
+
 
 @media (max-width: 600px) {
     .about .box {
@@ -267,7 +259,7 @@ p {
     }
 
     .aboutInterest ul {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .aboutSkills .box {
